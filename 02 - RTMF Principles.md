@@ -1,0 +1,109 @@
+## Overview
+This section defines the baseline principles, or concepts, that help drive the constructs and remainder of the program. The authors suggest that the principles are met or fulfilled through a construct - the principles and constructs should be linked to one another to enable the workflows and drive the overall program. 
+## RTMF-P-01: Awareness
+- **Description**: 
+	- An organization that seeks to implement a holistic threat modeling program must have some level of threat modeling awareness (of threat modeling itself and of the program), and the threat modeling program maintainers must have an awareness of the organization in alignment with threat modeling. This bi-directional awareness should include, but is not limited to:
+		- Threat modeling (e.g., threat modeling exercises and the holistic program)
+		- Organizational objectives (i.e., what organizational objectives does the threat modeling program help satisfy)
+		- The roles or business units responsible for the overall threat modeling program
+- **Justification**: 
+	- A lack of awareness may lead to a issues with adoption, traction, or successful implementation of a program. 
+- **Examples**:
+	- The organization should understand threat modeling and its benefits.
+	- The organization should understand that a threat modeling program exists.
+	- The threat modeling team should understand which organizational objectives the threat modeling program can help satisfy. 
+	- The organization and threat modeling team should understand the objectives with the individual threat model exercises are.
+		- **Note:** This may vary based on the specific exercise. 
+	- The organization and threat modeling team should understand the outcomes and objectives of the exercise output. 
+		- **Note:** There may be additional, specific objectives tied to an individual exercise.  
+	- The threat modeling team must be aware of the organizational constraints, skillsets, and capabilities to assist in implementing and scaling the program. 
+- **Risks**:
+	- Without bi-directional awareness, the threat modeling program may not be understood or supported by the organization, and the implementation and maintenance team may not align the threat modeling program with organizational objectives. This lack of awareness may lead to unsuccessful widespread adoption.
+- **Considerations**:
+	- The program maintainers should be able to answer the following questions:
+		- What is the organization trying to achieve?
+		- Will threat modeling satisfy any organizational objectives?
+		- Will threat modeling satisfy any regulatory or compliance objectives?
+		- Where does the threat modeling program fit within the organization?
+## RTMF-P-02: Purpose
+- **Description**: 
+	- The program's purpose, or "why", must be understood and documented.
+- **Justification**: 
+	- Understanding why the efforts are being spent to develop and implement a threat modeling program will help with organizational alignment, awareness, buy-in, and support. 
+- **Example**:
+	- The "why" will help the organization understand the need to scale out threat modeling efforts. 
+	- The "why" will assist with organizational buy-in from leaders across security, technology, and business functions. 
+	- "A core purpose of a threat modeling program is to proactively identify and mitigate potential security vulnerabilities in a system, application, or process before they can be exploited by threat actors, in addition to reducing the time and resources spent on fixing security deficiencies. This is a crucial shift from a reactive security posture to a proactive one."
+- **Risks**:
+	- Without this level of understanding from leadership, the program may suffer to achieve widespread adoption. 
+	- Without a clear purpose, business units who are resistant to threat modeling may be at risk of not performing threat modeling activities. 
+- **Considerations**
+	- The purpose of the program may evolve over time, or may roll in to other organizational objectives/mission statements.
+
+## RTMF-P-03: Enablement
+- **Description**: 
+	- Program enablement will help ensure that threat modeling activities are able to be performed in a consistent manner that aligns with the defined organizational expectations and objectives. To operate the program, several supporting tactical-level questions outside of RTMF-P-01 and RTMF-P-02 must be answered.
+- **Justification**: 
+	- Documenting the tactical-level details will help enable the operations of the program. 
+- **Example**:
+	- The organization and threat modeling team should define who in the organization is responsible for the threat modeling program, and supporting threat modeling activities (i.e., defining the roles and responsibilities of the program and the exercises). 
+	- The services performed by the threat modeling program must be defined and understood (e.g., holistic threat models, focused threat models) 
+	- The minimum requirements for the output of the threat modeling exercise should be determined (e.g., types of output, formatting consistency, what must be included, level of detail, locations that the output should reside, output ownership).
+	- The minimum required objectives that threat modeling exercises must meet should be defined (e.g., threat models may be used to achieve specific regulatory requirements or fuel detection engineering - this should be defined here).
+- **Risks**:
+	- Without these elements decided upon and documented, the threat modeling activities may be performed in an inconsistent or incomplete manner. 
+- **Considerations**
+	- Roles and responsibilities should be defined within the program and methodology documents. 
+	- Though the output should have minimum objectives defined, there should be room to include additional requirements or attributes. 
+	- The location for output may shift based on the specific exercise or requirements (e.g., A report being stored in Confluence versus an story or task in Jira).
+	- Output requirements should be developed in alignment with different organizational teams - diverse inputs will assist in ensuring that output is right-fit for who will own the output - too many requirements on output may lead to resistance or friction as it may slow down team agility. 
+
+## RTMF-P-04: Collaboration
+- **Description**: 
+	- Collaboration allows the threat modeling program to understand how it can best support the organization and how the organization can best support the program. 
+- **Justification**: 
+	- A collaborative spirit (i.e., working with the organization or teams within) can assist with developing the buy-in at multiple levels, and assist with relationship building. 
+- **Example**:
+	- The program should define how the organization can support the program (e.g., tools, teams, or capabilities within the organization that can help enable or support the program or activities). Examples include:
+		- Threat intelligence: If the organization has a threat intelligence function, this information can be ingested by the threat modeling team to focus threat modeling efforts on threats that are more relevant to the organization or target system.  
+		- Vulnerability management: Information from vulnerability management tools can be ingested by threat modeling teams to understand the current vulnerabilities that are applicable to the in-scope system being threat modeled. 
+		- Application security: Information from application security scanning tools can be ingested by threat modeling teams to enhance the level of detail and understanding about the target system.
+		- Development and operations teams: Application or infrastructure code can be provided to teams conducting threat model exercises to assist in developing reference architectures, or to gain a further understanding of how the target system operates. 
+		- Subject matter expertise: Business or technical subject matter expertise can be provided during the threat modeling exercises. Ideally, these subject matter experts are a part of the team performing the threat model. 
+	- The program should define how the threat modeling exercises can be used to help support organizational functions. Examples include:
+		- Diagram development: As threat modeling exercises will feature a component of information gathering with the possibility of reference architecture development, the teams conducting threat models can assist teams in developing documentation and diagrams.  
+		- Detection engineering: The output of threat modeling exercises can assist in highlighting any gaps in visibility and development of threat detection use cases related to the target system.  
+		- Threat hunting: The output of threat modeling exercises can be used as the basis for threat hunt missions to determine if threat actors have attempted to enact the threat scenarios identified. 
+		- Red team and penetration testing: Threat modeling output can be used by red teams and penetration testers to serve as a basis for validation of the threat scenarios or as a basis for scenarios that these teams may use as part of their activities.  
+		- Control gaps and risks: Threat modeling can be used to find existing gaps, misconfigurations, or influence additional security assessments related to the in-scope system, processes, or hosting infrastructure. 
+	- The program should have defined workflows that highlight where collaboration opportunities may exist, and where the threat modeling team may support those conducting exercises. 
+	- The program should ensure that the defined outputs for the threat modeling exercises have consumers understood (i.e., who will view the output, even if they do not own the results?). This may help shape some of the output requirements and content. 
+	- The program should ensure that the defined outputs for the threat modeling exercises consider multiple viewpoints and that output is right-sized for the teams that may consume and take ownership of it. 
+	- The program must define which organizational objectives that the program and exercises help satisfy. 
+- **Risks**:
+	- A lack of collaboration may lead to siloed threat models, weak relationships with other teams, and a lack of buy-in for threat modeling activities. 
+- **Considerations**
+	-  Consider diverse viewpoints and stakeholders within the exercises, as this will help ensure that multiple angles are considered as a part of the exercises while promoting relationship building and collaboration efforts. 
+	- Consider developing a 'threat modeling champion' function, similar to the application security concept of security champions. 
+
+## RTMF-P-05: Improvement
+- **Description**: 
+	- The program and exercises must have a mechanism to continuously improve and iterate over time to support growth and maturity. 
+- **Justification**: 
+	- The organization's capabilities, skillsets, and objectives will change over time. Technologies and the "threat landscape" will shift over time. A way to improve the program and exercises to collect feedback and adapt to these changes is paramount to a lasting program.  
+- **Example**:
+	- The program must have a defined mechanism to receive feedback from all parties that may participate in program or exercise activities. 
+	- The program must define a cadence for when program maintainers review feedback. 
+	- The program must define how feedback is to be tracked and acted upon.
+	- The program should define when threat modeling should be re-visited and improved upon. 
+	- The program should have defined maturity levels, including attributes for each level, to help understand which services or operating models can be supported. 
+	- The program should define how to onboard new individuals or business units into participating in the program or threat modeling exercises. 
+	- The program should have defined support mechanisms to address concerns or issues during an in-flight exercise. 
+- **Risks**:
+	- Not having a mechanism to receive feedback may lead to friction or a lack of adoption of the program.
+	- Not having a defined cadence for reviewing and implementing feedback may lead to a lack of continued growth and maturity. 
+	- Not having defined levels of maturity may result in the organization trying to implement too much of the program at once, leading to poor adoption and a halting of threat modeling activities. 
+- **Considerations**
+	- Feedback mechanisms should be as simple as light surveys or post-mortem discussions after the threat model exercise. 
+	- Ideally, feedback input mechanisms should be self-service and not too time consuming.
+	- Feedback should be sought from participants of threat modeling exercises and from the conductors of the exercises, as this allows for improvements being made to the 'customer' experience and for those responsible for executing the threat models.  
