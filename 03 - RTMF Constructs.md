@@ -1,0 +1,221 @@
+## Overview
+This section defines the constructs that build on the principles. These constructs can be thought of as the systems or the mechanisms that will enable the threat modeling program to exist. The constructs listed here should be considered the 'defaults' - add, edit, adjust as needed. 
+
+## RTMF-C-01: Program Governance and Operations Definition 
+- **Description**:
+	- The program governance and operations definition helps ensure that the organization can consistently perform threat models by explicitly documenting who is responsible for establishing the threat modeling framework/program, who will conduct the threat modeling exercises, what organizational objectives the framework/program helps support, who is responsible for maintaining the program. 
+- **Justification**:
+	- By explicitly defining the threat modeling program/framework's governance and operational details, the organization can be sure that threat modeling activities are running in a manner that has been agreed upon and approved by the core stakeholders. 
+- **Example**:
+	- Within the threat modeling program document, capture details such as:
+		- Document Overview and Purpose: High-level encapsulation of what the program document will contain and why it has been created. 
+		- Threat Modeling Program Overview: Introduction to threat modeling (for readers who may be unaware), benefits of threat modeling, program scope, and program ownership. 
+		- Aligned Organizational Directives/Initiatives/Policies/Standards: How and where does the program align with the organization. 
+		- Operating Model(s): Within the organization, how does the program operate? 
+			- Program Structure
+			- Roles and Responsibilities
+			- Continuous Improvement
+			- Threat Modeling Services
+- **Risks**:
+	- Make sure to right-size the definitions for the current maturity levels of the organization and objectives of threat modeling application. While it is good to have this well thought out initially, note that the organization may have difficulty consuming or implementing the governance and operating models. 
+- **Considerations**: 
+	- Further codify and adopt this by developing a threat modeling standard. 
+	- Centralize this information and make it accessible to those that may not even need it, as applicable to the organization. 
+	- Include the information from RTMF-C-02 through RTMF-C-08 to help ensure that the governance, operations, and additional information require to run threat models is captured in one location.
+- **Outputs**
+	- Threat Model Program Document / Threat Model Program Page (i.e., article or page in Confluence or similar)
+- **Linked Principles**
+	- RTMF-P-01: Awareness
+	- RTMF-P-02: Purpose
+
+## RTMF-C-02: Program Requirements
+- **Description**:
+	- The program requirements outlines what is needed from people, process, and technology points of view. 
+- **Justification**:
+	- Documenting the requirements for running the threat modeling program and exercises will help identify where the organization may require additional resourcing and how the organization can mature the program over time as more requirements are included as part of organizational growth. 
+- **Example**:
+	- An example of threat modeling program requirements may contain:
+		- Personnel Requirements: What are the roles involved within the program, what are the skillset requirements, and what are the training requirements?
+		- Process Requirements: Who owns the collateral, who may be involved within a threat model, what are the 'definitions of done' for threat modeling output, how does feedback get disseminated and how is it acted upon?
+		- Technology Requirements: How are requests for threat models tracked, what tools are used to store data, what tools are used to assist with threat modeling efforts, what are the access requirements for these tools?
+- **Risks**:
+	- Avoid requirements that may be difficult to measure or attain for the current level of maturity and acceptance of threat modeling - this can always be expanded and added to. 
+- **Considerations**:
+	- Requirements may shift as the organization matures, as the threat landscape changes, and as technologies used by the organization change.
+	- Include this as a section/component of the threat modeling program. 
+	- This should consider: 
+		- People
+			- Who will own the threat modeling program (e.g., organizational functions or teams)
+			- Who will conduct the threat model activities 
+			- The skills required for participating in threat modeling exercises
+		- Process
+			- When threat models will be conducted
+			- How and when the threat modeling program document will be updated 
+		- Technology
+			- Where information on threat modeling will be stored
+			- Where threat modeling output will be stored 
+			- What tools can assist with threat modeling throughout the activities (e.g., information gathering, threat analysis, etc.)
+- **Outputs**:
+	- A listing of requirements.
+- **Linked Principles**:
+	- RTMF-P-01: Awareness
+	- RTMF-P-02: Purpose
+	- RTMF-P-03: Enablement
+
+## RTMF-C-03: Threat Modeling Services
+- **Description**:
+	- Definition of the services that are provided by the threat modeling program for consumption by the organization. This should include both the types of threat models, but also include the operating models, including a definition and attributes. 
+- **Justification**:
+	- Documenting these services will help ensure that the organization better understands what can be requested from the program, and how the threat models can be conducted. 
+- **Example**:
+	- Types of threat models that should be included:
+		- Focused threat models - A threat model exercise that is more rapid in nature, aiming to have a majority of the threat modeling efforts completed within an hour or less. These are better suited for development teams or smaller, more iterative exercises 
+		- Holistic threat models - A threat modeling exercise that is more full in nature, valuing completeness over agility. These are better suited for integrations with teams such as architecture or risk, or where a more complete artifact is required (i.e., to satisfy audit or regulatory requirements). 
+	- Operating models that should be considered:
+		- Threat Model Functional Group-Led - The TMFG will conduct the entire threat modeling process end-to-end, including development of the output and then assigning the resulting work to other teams in the organization as necessary. 
+		- Threat Model Functional Group Assisted - The TMFG will assist the individuals conducting the exercises with completing the threat model. The level of involvement may vary based on organizational awareness of threat modeling, but ideally the TMFG would be playing an active support role participating in information gathering and threat analysis to ensure that individuals are completing the activities correctly. Consider this the "training wheels" variant. 
+		- Self-Service - Training wheels are off. The individuals that understand threat modeling must be done are in complete control and conducting the exercises themselves. 
+- **Risks**:
+	- Ensure that the definitions of shared responsibilities for the operating models are clearly defined, articulated, and understood to help avoid any miscommunications that could lead to incomplete exercises. 
+- **Considerations**:
+	- Include the defined services within an existing service catalogue. 
+	- Include this as a section/component of the threat modeling program. 
+- **Outputs**:
+	- Clearly defined operating models and types of threat models that are supported by the organization and threat modeling program. 
+- **Linked Principles**:
+	- RTMF-P-03: Enablement
+
+## RTMF-C-04: Supporting Functions
+- **Description**:
+	- Definition of the organizational functions or teams that can support the threat modeling program in conducting its activities. 
+- **Justification**:
+	- Outlining how the organization can help support threat modeling can ensure that the resources spent building other organizational functions can be optimized. 
+- **Example**:
+	- Cyber threat intelligence teams within an organization can help feed strategic threat intelligence into the threat modeling program, as this can be used by individuals conducting threat modeling exercises to influence the scenarios. 
+- **Risks**:
+	- Ensure that any organizational function has a clear method to support the threat modeling program.
+	- Ensure that the teams or individuals involved with those support functions understand and are supportive of their role in relation to the threat modeling program.
+- **Considerations**:
+	- This doesn't necessarily need to be security-related teams - any team that can help provide information or subject matter expertise as a part of a threat model should be considered (e.g., risk, infrastructure/operations, manufacturing, etc.).
+- **Outputs**:
+	- A listing of which organizational functions can play a supporting role within the overall threat modeling program/exercises. 
+	- A definition and guidance for how the function can support the threat modeling program/exercises.
+- **Linked Principles**:
+	- RTMF-P-04: Collaboration
+
+
+## RTMF-C-05: Supported Outcomes
+- **Description**:
+	- To contrast with RTMF-C-04, this should highlight how the threat modeling program can provide additional value to the organization outside of the core deliverables. 
+- **Justification**:
+	- Threat modeling is an excellent opportunity to develop a deeper understanding of how systems, applications, environments, or other targets operate from a technology and business process perspective. This information should be shared with other teams that may find value in it. 
+- **Example**:
+	- Threat modeling will typically generate different threat scenarios that highlight threats facing the in-scope system - these threat scenarios can be provided as an input to a threat hunting team for them to develop and execute threat hunts. 
+- **Risks**:
+	- Lack of awareness for other organizational functions and how they operate will limit the supported outcomes that may be identified. 
+- **Considerations**:
+	- Consider how the program can support all teams or functions, technical or non-technical. Threat modeling consists of discovery work, potentially building reference architecture models, and identifying threats. A lot of this information can be consumed by teams that haven't had time to document, or that are unaware of target (i.e., application, system) specific threats facing the business. 
+- **Outputs**:
+	- A listing of which organizational functions can play a supporting role within the overall threat modeling program/exercises. 
+	- A definition and guidance for how the function can support the threat modeling program/exercises.
+- **Linked Principles**:
+	- RTMF-P-04: Collaboration
+
+## RTMF-C-06: Threat Modeling Activity 
+- **Description**:
+	- Definition of the core steps that should take place during the different threat modeling services that were defined in RTMF-C-03 - not the operating models, but the focused or holistic threat models. This should answer how a threat model is actually conducted. 
+- **Justification**:
+	- Defining the threat modeling activities will help ensure that the methodologies followed and activities conducted have a baseline of steps completed, leading to consistency. 
+	- Definition of the threat modeling activities can help ensure that in self-service scenarios, individual have guidance on the key elements that should be explored. 
+- **Example**:
+	- Highlight the major phases of a threat modeling activity, including objectives and high-level steps:
+		- Requirements and Planning: Include information on steps such as stakeholder identification, threat modeling motivator/objectives definition, scoping, etc.  
+		- Information Gathering: Include what information may contribute to the information gathering and provide a high-level description of how to do it. 
+		- Threat Analysis: Include a description of the threat analysis steps such as development of reference architectures (as needed), analysis of threat intelligence, development of the threat scenarios and attack path considerations.   
+		- Output: Include information on what should be included within the threat modeling output or reporting. Include information on any quality assurance steps.  
+		- Feedback and Improvements: Include information on how feedback should be collected, disseminated, and actioned. Include information related to the types of feedback sought.  
+- **Risks**:
+	- Right size the activity for the current maturity level - overengineering can occur here, leading to lack of adoption. 
+	- Bringing in tools too early before individuals don't understand how to threat model or what it is - crawl, walk, and then run. 
+- **Considerations**:
+	- While the main phases of the threat modeling activities should be defined here, build a dedicated threat modeling methodology aligned with the different types of threat models that are conducted. This will help dig into more details at the major established phases of the activity. 
+- **Outputs**:
+	- High-level steps / phases for threat modeling activities. 
+- **Linked Principles**:
+	- RTMF-P-01: Awareness
+	- RTMF-P-03: Enablement
+
+## RTMF-C-07: Threat Modeling Output 
+- **Description**:
+	- Outline of what should be included within any output that is created as a result of a threat model. Next steps for the output, including roles and responsibilities, should be defined here.
+- **Justification**:
+	- Defining the output requirements can help ensure that the core and supported outcomes are met.
+- **Example**:
+	- Jira Issues/Tasks
+	- Report template
+	- Markdown file stored in version control system 
+- **Risks**:
+	- Ensure that the output format, structure, and content recommendations are satisfying the requirements of the team or organization, but balance the overhead required to develop. The goal is to create useful output, and not friction. 
+- **Considerations**:
+	- There may be different outputs with specific requirements based on the type of threat model, or the team responsible for the output of the threat model. Use multiple if needed.
+- **Outputs**:
+	- Definition of what should be included in the output.
+	- Templates.
+- **Linked Principles**:
+	- RTMF-P-03: Enablement
+	- RTMF-P-04: Collaboration
+
+## RTMF-C-08: Feedback and Improvement Mechanisms
+- **Description**:
+	- Definition of the systems used to collect and implement feedback back into the threat modeling framework.
+- **Justification**:
+	- Providing mechanisms for receiving and implementing feedback will allow for a structured approach to continuously improve the way threat models are being conducted over time.
+- **Example**:
+	- Feedback surveys
+	- Metrics
+- **Risks**:
+	- Feedback is collected but not implemented.
+	- Feedback is not collected or reviewed 
+	- Metrics are not collected.
+	- Collecting this information is too manual, cumbersome, or difficult.
+- **Considerations**:
+	- Review feedback on a quarterly basis.
+	- Take the feedback and metrics, develop improvement items, and add them to a work tracking system.
+	- Serves [[05 - Implementation, Maturity, and Continuous Improvement]]
+- **Outputs**: 
+	- Listing of metrics and data sources.
+	- Feedback survey templates.
+- **Linked Principles**:
+	- RTMF-P-05: Improvement
+
+## RTMF-C-09: Threat Modeling Functional Group
+- **Description**:
+	- The Threat Model Functional Group (TMFG) is a concept that acts as the group who is responsible for managing and maintaining the framework, including conducting the threat model exercises in alignment with the operating models.
+- **Justification**:
+	- Without the functional group, dedicated resources or a small number of part time resources would take on these responsibilities. The TMFG allows organizations to create a larger, multi-disciplinary group that can scale in and out as needed, relying on a few core members to oversee the operations.
+- **Example**:
+	- TMFG consisting of program maintainers and threat modelers, made up of organizational groups such as:
+		- Security Operations 
+		- Threat Intelligence
+		- Red Team
+		- Developers
+		- Architecture 
+		- Infrastructure and Operations 
+		- Risk
+- **Risks**:
+	- Lack of buy-in or support to conduct these activities on an ad-hoc basis
+- **Considerations**:
+	- Make this group as diverse as possible
+	- If this approach doesn't work, consider making the TMFG a central group of dedicated resources 
+	- Have two roles within the TMFG:
+		- Program Maintainers:
+			- The program maintainers are members of the TMFG who are responsible for the continued maintenance, feedback collection, and continual improvements of the threat modeling program
+			- The program maintainers may also be included within the 'modelers' role
+		- Modelers: 
+			- The modelers will be responsible for conducting the threat modeling activities
+- **Outputs**:
+	- A documented group of the organizations functional areas and individuals who will participate within the threat 
+- **Linked Principles:**
+	- RTMF-P-03: Enablement
+	- RTMF-P-04: Collaboration
+	- RTMF-P-05: Improvement
